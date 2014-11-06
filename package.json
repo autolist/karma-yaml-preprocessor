@@ -1,40 +1,40 @@
 {
-  "name": "karma-yaml-preprocessor",
-  "version": "0.2.1",
-  "description": "A Karma plugin. Compile yaml on the fly.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/carlosmarte/karma-yaml-preprocessor.git"
-  },
-  "keywords": [
-    "karma-plugin",
-    "karma-preprocessor",
-    "yaml",
-  ],
-  "author": {
-    "name": "Carlos Marte",
-    "email": "opensource@carlosmarte.me"
-  },
-  "dependencies": {
-    "js-yaml": "^3.2.2"
-  },
-  "peerDependencies": {
-    "karma": ">=0.11.14"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-npm": "~0.0.2",
-    "grunt-bump": "~0.0.7",
-    "grunt-auto-release": "~0.0.2"
-  },
-  "contributors": [],
-  "bugs": {
-    "url": "https://github.com/carlosmarte/karma-yaml-preprocessor/issues"
-  },
-  "homepage": "https://github.com/carlosmarte/karma-yaml-preprocessor"
+    "name": "karma-yaml-preprocessor",
+    "version": "0.2.1",
+    "description": "A Karma plugin. Compile yaml on the fly.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/carlosmarte/karma-yaml-preprocessor.git"
+    },
+    "keywords": [
+        "karma-plugin",
+        "karma-preprocessor",
+        "yaml"
+    ],
+    "author": {
+        "name": "Carlos Marte",
+        "email": "opensource@carlosmarte.me"
+    },
+    "dependencies": {
+        "js-yaml": "^3.2.2"
+    },
+    "peerDependencies": {
+        "karma": ">=0.11.14"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-npm": "~0.0.2",
+        "grunt-bump": "~0.0.7",
+        "grunt-auto-release": "~0.0.2"
+    },
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/carlosmarte/karma-yaml-preprocessor/issues"
+    },
+    "homepage": "https://github.com/carlosmarte/karma-yaml-preprocessor"
 }
