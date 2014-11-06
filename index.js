@@ -1,7 +1,6 @@
 var yaml = require('js-yaml');
 var path = require('path');
 var createYamlPreprocessor = function(args, config, logger, helper) {
-  console.log('-----------------------------------------------');
   config = config || {};
 
   var log = logger.create('preprocessor.yaml');
