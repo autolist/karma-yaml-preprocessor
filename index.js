@@ -11,7 +11,7 @@ var createYamlPreprocessor = function(args, config, logger, helper) {
   var options = helper.merge(defaultOptions, args.options || {}, config.options || {});
 
   var transformPath = args.transformPath || config.transformPath || function(filepath) {
-    return filepath.replace(/\.yaml$/, '.json');
+    return filepath.replace(/\.yml$/, '.json');
   };
 
   return function(content, file, done) {
@@ -23,7 +23,6 @@ var createYamlPreprocessor = function(args, config, logger, helper) {
 
     try {
       yaml.safeLoadAll(content, function (result) {
-        console.log(result);
         done(null, result);
       });
     } catch (e) {
