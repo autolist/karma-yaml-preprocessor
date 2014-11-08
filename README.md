@@ -36,7 +36,7 @@ module.exports = function(config) {
 
 ### Authors
 
-  - [Roberto Carlos Marte (visionmedia)](http://carlosmarte.me/)
+  - [Roberto Carlos Marte](http://carlosmarte.me/)
 
 ## License
 
