@@ -1,6 +1,7 @@
 var yaml = require('js-yaml');
 var path = require('path');
-var createYamlPreprocessor = function(args, config, logger, helper) {
+
+var createYamlPreprocessor = function(args, config, logger, helper, basePath) {
   config = config || {};
 
   var log = logger.create('preprocessor.yaml');
@@ -19,11 +20,20 @@ var createYamlPreprocessor = function(args, config, logger, helper) {
     file.path = transformPath(file.originalPath);
 
     // Clone the options
-    var opts = helper._.clone(options)  
+    var opts = helper._.clone(options)
 
     try {
       yaml.safeLoadAll(content, function (result) {
-        done(null, result);
+        var jsonFilePath = file.path.toString();
+        jsonFilePath = jsonFilePath.replace(basePath, '');
+        jsonFilePath = jsonFilePath.replace('.json', '');
+        jsonFilePath = jsonFilePath.split('/').join('.');
+        jsonFilePath = jsonFilePath.slice(1).toLowerCase();
+
+        var TEMPLATE = 'window.__JSON__ = window.__JSON__ || {};\n';
+        TEMPLATE += 'window.__JSON__[\''+jsonFilePath+'\'] = ';
+        TEMPLATE += JSON.stringify(result)+';';
+        done(null, TEMPLATE);
       });
     } catch (e) {
       var msg = null;
@@ -38,7 +48,9 @@ var createYamlPreprocessor = function(args, config, logger, helper) {
   };
 };
 
-createYamlPreprocessor.$inject = ['args', 'config.yamlPreprocessor', 'logger', 'helper'];
+createYamlPreprocessor.$inject = [
+  'args', 'config.yamlPreprocessor', 'logger', 'helper', 'config.basePath', 'config.files'
+];
 
 // PUBLISH DI MODULE
 module.exports = {

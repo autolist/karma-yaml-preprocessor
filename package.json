@@ -1,6 +1,6 @@
 {
     "name": "karma-yaml-preprocessor",
-    "version": "0.2.1",
+    "version": "0.3.1",
     "description": "A Karma plugin. Compile yaml on the fly.",
     "main": "index.js",
     "scripts": {
