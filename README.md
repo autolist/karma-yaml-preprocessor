@@ -7,10 +7,10 @@ Install `karma-yaml-preprocessor` as a `devDependency` in your package.json:
 ```bash
 npm install karma-yaml-preprocessor --save-dev
 ```
-Node Packaged Modules(https://www.npmjs.org/package/karma-yaml-preprocessor)
+##### Node Packaged Modules (https://www.npmjs.org/package/karma-yaml-preprocessor)
 
 ### Usage
-#### Adding karma-yaml-preprocessor to an existing Karma config
+##### Adding karma-yaml-preprocessor to an existing Karma config
 
 ```js
 
