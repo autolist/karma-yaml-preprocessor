@@ -1,11 +1,8 @@
 {
     "name": "karma-yaml-preprocessor",
-    "version": "0.3.1",
-    "description": "A Karma plugin. Compile yaml on the fly.",
+    "version": "1.0.0",
+    "description": "convert files from YAML to JSON during your unit tests",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
         "type": "git",
         "url": "git://github.com/carlosmarte/karma-yaml-preprocessor.git"
@@ -26,12 +23,6 @@
         "karma": ">=0.11.14"
     },
     "license": "MIT",
-    "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-npm": "~0.0.2",
-        "grunt-bump": "~0.0.7",
-        "grunt-auto-release": "~0.0.2"
-    },
     "contributors": [],
     "bugs": {
         "url": "https://github.com/carlosmarte/karma-yaml-preprocessor/issues"
