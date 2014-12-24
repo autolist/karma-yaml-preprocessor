@@ -1,1 +1,12 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+coverage
+.grunt
+build/Release
 node_modules
+*.baseDir.ts
+*.baseDir.js
+.DS_Store

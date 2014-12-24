@@ -1,0 +1,31 @@
+{
+    "name": "karma-yaml-preprocessor",
+    "version": "1.0.0",
+    "description": "convert files from YAML to JSON during your unit tests",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/carlosmarte/karma-yaml-preprocessor.git"
+    },
+    "keywords": [
+        "karma-plugin",
+        "karma-preprocessor",
+        "yaml"
+    ],
+    "author": {
+        "name": "Carlos Marte",
+        "email": "opensource@carlosmarte.me"
+    },
+    "dependencies": {
+        "js-yaml": "^3.2.2"
+    },
+    "peerDependencies": {
+        "karma": ">=0.11.14"
+    },
+    "license": "MIT",
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/carlosmarte/karma-yaml-preprocessor/issues"
+    },
+    "homepage": "https://github.com/carlosmarte/karma-yaml-preprocessor"
+}

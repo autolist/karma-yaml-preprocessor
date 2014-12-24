@@ -1,0 +1,6 @@
+--compilers coffee:coffee-script/register
+--reporter list
+--recursive
+--slow 20000
+test/mocha-globals.coffee
+test/unit/*.Spec.coffee

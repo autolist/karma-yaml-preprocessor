@@ -1,0 +1,15 @@
+default:
+  - 'package'
+  - 'concurrent:watch'
+
+package:
+  - 'clean:dist'
+  - 'clean:staging'
+  - 'clean:publish'
+  - 'script'
+  - 'release:patch'
+
+script:
+  - 'tslint'
+  - 'clean:script'
+  - 'ts:script'
