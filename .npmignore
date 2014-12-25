@@ -23,3 +23,5 @@ tslint.json
 .editorconfig
 source
 grunt
+example
+test

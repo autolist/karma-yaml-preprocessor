@@ -2,7 +2,7 @@ default:
   - 'package'
   - 'concurrent:watch'
 
-package:
+publish:
   - 'clean:dist'
   - 'clean:staging'
   - 'clean:publish'
