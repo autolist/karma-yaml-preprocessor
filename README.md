@@ -13,25 +13,26 @@ npm install karma-yaml-preprocessor --save-dev
 ##### Adding karma-yaml-preprocessor to an existing Karma config
 
 ```js
-
-module.exports = function(config) {
-  config.set({
-    /*
-    ************************
-    frameworks: [....],
-    browsers: [....],
-    reporters: [....],
-    ************************
-    */
-    files: ['test/**/*.yml'],
-    yamlPreprocessor:{
-      options:{}
-    },
-    preprocessors: {
-      'test/**/*.yml': 'yaml'
-    }
-  });
-};
+  // karma.conf.js
+  module.exports = function(config) {
+    config.set({
+      frameworks: ['mocha'],
+      files: [
+        '*.js',
+        {pattern: '*.yaml', included: true, served: true},
+      ],
+      preprocessors: {
+        '*.yaml': ['yaml']
+      },
+      browsers: ['Firefox'],
+      yamlPreprocessor:{
+      },
+      plugins: [
+        "karma-yaml-preprocessor",
+        'karma-*'
+      ],
+    });
+  };
 ```
 
 ### Authors
