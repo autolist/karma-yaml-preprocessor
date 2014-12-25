@@ -1,5 +1,5 @@
 default:
-  - 'package'
+  - 'publish'
   - 'concurrent:watch'
 
 publish:
