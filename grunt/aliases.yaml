@@ -1,15 +1,15 @@
 default:
-  - 'publish'
+  - 'script'
   - 'concurrent:watch'
 
 publish:
-  - 'clean:dist'
-  - 'clean:staging'
   - 'clean:publish'
   - 'script'
   - 'release:patch'
 
 script:
+  - 'clean:dist'
+  - 'clean:staging'
   - 'tslint'
   - 'clean:script'
   - 'ts:script'
